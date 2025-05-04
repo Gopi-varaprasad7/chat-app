@@ -1,24 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
 
 const Header = () => {
-    const [isLogin,setIsLogin] = useState(false);
-    const [isRegister,setIsRegister] = useState(false);
 
     const navigate = useNavigate ();
 
     const handleLogin =() => {
-     setIsLogin(true);
-        if(isLogin){
-            navigate('/login')
-        }
+        navigate('/login')
     }
     const handleRegister = () => {
-        setIsRegister(true);
-        if(isRegister){
-            navigate('/register')
-        }
+        navigate('/register')
     }
   return (
     <div 
