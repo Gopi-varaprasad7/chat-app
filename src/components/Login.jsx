@@ -28,14 +28,14 @@ const Login = () => {
   return (
     <>
       <Header />
-      <div className='flex flex-col items-center justify-center mt-24'>
-        <form className='flex flex-col gap-5 mt-5 border sm:p-16 rounded-2xl p-10' onSubmit={handleSubmit}>
-        <h1 className='text-3xl font-bold text-center'>Login Here</h1>
+      <div className='flex flex-col items-center justify-center mt-48'>
+        <h1 className='text-3xl font-bold'>Login Here</h1>
+        <form className='flex flex-col gap-5 mt-5' onSubmit={handleSubmit}>
           <div>
             <label>Email</label>
             <br />
             <input
-              className='border rounded sm:w-84 h-10 pl-3 w-64'
+              className='border rounded sm:w-84 h-10 pl-3'
               type='email'
               name='email'
               value={email}
@@ -50,7 +50,7 @@ const Login = () => {
             <label>Password</label>
             <br />
             <input
-              className='border rounded sm:w-84 h-10 pl-3 w-64'
+              className='border rounded sm:w-84 h-10 pl-3'
               type='password'
               name='password'
               value={password}
@@ -64,14 +64,12 @@ const Login = () => {
               </p>
             )}
           </div>
-          <div className='flex justify-center'>
           <button
-            className='bg-blue-500 text-white px-5 py-2 rounded w-36'
+            className='bg-blue-500 text-white px-5 py-2 rounded'
             type='submit'
           >
             Login
           </button>
-          </div>
         </form>
       </div>
     </>
